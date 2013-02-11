@@ -1,0 +1,56 @@
+<div ng-controller="SpielCtrl">
+<h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro asperiores mollitia ullam nemo possimus iure autem facilis ipsam provident harum delectus minus explicabo. Expedita laboriosam ea est minus animi earum quidem rerum architecto modi dolores possimus saepe consequatur illum eos magnam! Illum consectetur tempora dolor possimus minima qui non quidem porro est voluptate ex eaque cum minus provident at nesciunt nulla similique officiis labore beatae optio excepturi expedita. Voluptate in doloremque qui minima nesciunt nihil esse eligendi quaerat eaque et accusantium magni recusandae impedit maxime voluptatem quasi aut. Magnam distinctio culpa! Libero ad ex voluptates tempora facilis ipsa similique?</p>
+        
+        
+        <div class="row">
+            <div class="span10">
+                <h2>Szenario Übersicht</h2>
+                <div class="row">
+                    <div class="span5">
+                        <h3>Szenario1: name</h3>
+                        <h4>Verfügbares Geld:</h4>
+                        <p>{{getBudget()}}&euro;</p>
+                        <div class="progress progress-success progress-striped active">
+                            <div class="bar" style="width: {{getBudgetPro()}}%;"></div>
+                        </div>
+                        <h4>Verbrauchtes CO<sub>2</sub>:</h4>
+                        <p>{{getCo2()}}mg/m<sup>2</sup></p>
+                        <div class="progress progress-danger progress-striped active">
+                            <div class="bar" style="width: {{getCo2Pro()}}%;"></div>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <h3>Szenario2: name</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Produktauswahl Szenario1:</h2>
+        <dl>
+            <ul class="unstyled">
+                <li ng-repeat="products in scenario1Products">
+                    <dt>
+                        <div class="row-fluid">
+                            <div class="span3 lead">{{products.product.name}}</div>
+                            <div class="span1">{{products.product.price}}&euro;</div>
+                            <div class="span2">{{products.product.co2}}mg/m<sup>2</sup></div>
+                        </div>
+                    </dt>
+                    <dd>
+                        <p>{{products.product.snippet}}</p>
+                            <div class="btn-group" data-toggle="buttons-radio">
+                                <button type="button" class="btn active" ng-click="exec(products.product.id,0)">0</button>
+                                <button type="button" class="btn" ng-click="exec(products.product.id,1)">1</button>
+                                <button type="button" class="btn" ng-click="exec(products.product.id,2)">2</button>
+                                <button type="button" class="btn" ng-click="exec(products.product.id,3)">3</button>
+                                <button type="button" class="btn" ng-click="exec(products.product.id,4)">4</button>
+                                <button type="button" class="btn" ng-click="exec(products.product.id,5)">5</button>
+                            </div>                    
+                    </dd>
+                </li>
+            </ul>
+        </dl>
+</div>
