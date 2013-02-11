@@ -3,10 +3,18 @@
 /* Controllers */
 
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function HomeCtrl($scope,$http) {
+	
 }
-MyCtrl2.$inject = [];
+HomeCtrl.$inject = ['$scope','$http'];
+
+
+function SpielCtrl($scope,$http) {
+
+}
+SpielCtrl.$inject = ['$scope','$http'];
+
+function UeberunsCtrl($scope,$http) {
+
+}
+UeberunsCtrl.$inject = ['$scope','$http'];
