@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="../js/holder.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#"><img src="../img/sustainicum-logo-header.png" alt="Sustainicum" title="Sustainicum"></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="../">Home</a></li>
+                            <li class="active"><a href="./">Spiel</a></li>
+                            <li><a href="../ueberuns/">Über Uns</a></li>
+                            <li><a href="../impressum/">Impressum</a></li>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container" ng-controller="ScenarioCtrl">
+            <h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro asperiores mollitia ullam nemo possimus iure autem facilis ipsam provident harum delectus minus explicabo. Expedita laboriosam ea est minus animi earum quidem rerum architecto modi dolores possimus saepe consequatur illum eos magnam! Illum consectetur tempora dolor possimus minima qui non quidem porro est voluptate ex eaque cum minus provident at nesciunt nulla similique officiis labore beatae optio excepturi expedita. Voluptate in doloremque qui minima nesciunt nihil esse eligendi quaerat eaque et accusantium magni recusandae impedit maxime voluptatem quasi aut. Magnam distinctio culpa! Libero ad ex voluptates tempora facilis ipsa similique?</p>
+            
+            
+            <div class="row">
+                <div class="span10">
+                    <h2>Szenario Übersicht</h2>
+                    <div class="row">
+                        <div class="span5">
+                            <h3>Szenario1: name</h3>
+                            <h4>Verfügbares Geld:</h4>
+                            <p>{{getBudget()}}&euro;</p>
+                            <div class="progress progress-success progress-striped active">
+                                <div class="bar" style="width: {{getBudgetPro()}}%;"></div>
+                            </div>
+                            <h4>Verbrauchtes CO<sub>2</sub>:</h4>
+                            <p>{{getCo2()}}mg/m<sup>2</sup></p>
+                            <div class="progress progress-danger progress-striped active">
+                                <div class="bar" style="width: {{getCo2Pro()}}%;"></div>
+                            </div>
+                        </div>
+                        <div class="span5">
+                            <h3>Szenario2: name</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Produktauswahl Szenario1:</h2>
+            <dl>
+                <ul class="unstyled">
+                    <li ng-repeat="products in scenario1Products">
+                        <dt>
+                            <div class="row-fluid">
+                                <div class="span3 lead">{{products.product.name}}</div>
+                                <div class="span1">{{products.product.price}}&euro;</div>
+                                <div class="span2">{{products.product.co2}}mg/m<sup>2</sup></div>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p>{{products.product.snippet}}</p>
+                                <div class="btn-group" data-toggle="buttons-radio">
+                                    <button type="button" class="btn active" ng-click="exec(products.product.id,0)">0</button>
+                                    <button type="button" class="btn" ng-click="exec(products.product.id,1)">1</button>
+                                    <button type="button" class="btn" ng-click="exec(products.product.id,2)">2</button>
+                                    <button type="button" class="btn" ng-click="exec(products.product.id,3)">3</button>
+                                    <button type="button" class="btn" ng-click="exec(products.product.id,4)">4</button>
+                                    <button type="button" class="btn" ng-click="exec(products.product.id,5)">5</button>
+                                </div>                    
+                        </dd>
+                    </li>
+                </ul>
+            </dl>
+
+
+
+            <hr>
+
+            <footer>
+                <p>&copy; 2012 <a href="http://pmig.at" alt="pmig Webdevelopment">pmig / Boku</a></p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="../js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+        <script src="../js/angular.min.js"></script>
+        <script src="../js/controllers.js"></script>
+        <script src="../js/main.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</html>
