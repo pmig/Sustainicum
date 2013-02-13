@@ -7,6 +7,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="fragment" content="!" />
+  <base href="/my-base">
   <title>Sustainicum Webapp</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
@@ -31,12 +33,17 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
             <a class="brand" href="#"><img src="img/sustainicum-logo-header.png" alt="Sustainicum" title="Sustainicum"></a>
             <div class="nav-collapse collapse" >
                 <ul class="nav">
-                    <li ng-class="{active: '/home'==location.path()}"><a href="#/home">Home</a></li>
-                    <li ng-class="{active: '/spiel'==location.path()}"><a href="#/spiel">Spiel</a></li>
-                    <li ng-class="{active: '/ueberuns'==location.path()}"><a href="#/ueberuns">Über Uns</a></li>
+                    <li ng-class="{active: '/'==location.path()}"><a href="/">Home</a></li>
+                    <li ng-class="{active: '/spiel'==location.path()}"><a href="/spiel">Spiel</a></li>
+                    <li ng-class="{active: '/ueberuns'==location.path()}"><a href="/ueberuns">Über Uns</a></li>
                     <li><a href="#/impressum">Impressum</a></li>
                     </li>
                 </ul>
