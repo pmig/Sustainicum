@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives']).
+angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'ui.bootstrap']).
   config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
   	$locationProvider.html5Mode(true).hashPrefix('!');
 
@@ -10,8 +10,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
     $routeProvider.when('/spiel', {templateUrl: 'partials/spiel.html', controller: SpielCtrl});
     $routeProvider.when('/ueberuns',{templateUrl: 'partials/ueberuns.html', controller: UeberunsCtrl});
     $routeProvider.otherwise({redirectTo: '/'});
-}]).run(['$rootScope','$location','$anchorScroll',function($rootScope, $location, $anchorScroll) {
-	$rootScope.anchorScroll = $anchorScroll;
+}]).run(['$rootScope','$location',function($rootScope, $location) {
 	$rootScope.location = $location;
 }]);
 

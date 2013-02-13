@@ -22,7 +22,10 @@ function SpielCtrl($scope,$http) {
 		};
 
 
-	var cart = new Array();
+	var cart = [];
+	$scope.alerts = [];
+
+	
 
 	$scope.getBudget = function (format) {
 		var tmpSum = 0;
@@ -60,6 +63,15 @@ function SpielCtrl($scope,$http) {
 		}
 	}
 
+	$scope.getAmount = function (id) {
+		var pos = inCart(id);
+		if (pos == -1) {
+			return 0;
+		} else {
+			return cart[pos][1];
+		}
+	}
+
 	function inCart (id) {
 		for (var i = cart.length - 1; i >= 0; i--) {
 			if (cart[i][0].product.id == id) return i;
@@ -68,7 +80,12 @@ function SpielCtrl($scope,$http) {
 	}
 
 	function checkCart () {
-		// body...
+		if ($scope.getBudget() < 0) {
+			$scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht!' });
+		}
+		if ($scope.getHappiness() >= 100) {
+			$scope.alerts.push({type:'success', msg: 'Gratulation, du hast die maximale Zufriedenheit errreicht!'})
+		};
 	}
 
 	$scope.exec = function(id, amount) {
@@ -80,6 +97,12 @@ function SpielCtrl($scope,$http) {
 		}
 		checkCart();
 	}
+
+	
+
+	$scope.closeAlert = function(index) {
+    	$scope.alerts.splice(index, 1);
+  	};
 }
 SpielCtrl.$inject = ['$scope','$http'];
 

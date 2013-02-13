@@ -13,6 +13,12 @@
     padding-bottom: 0;
 }
 
+.sidenav {
+	position: fixed;
+	width:16%;
+}
+
+
 
 
 
