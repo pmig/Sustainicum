@@ -2,14 +2,16 @@
 	{"product": {
 		"id": 0,
 		"name": "Produkt1",
+		"art" : "Art2",
 		"price": 10.3,
 		"co2": 5,
-		"happiness": 20,
+		"happiness": 10,
 		"snippet": "Produkt1 Beschreibung"}},
 	{"product": {
 		"id": 1,
 		"name": "Produkt2",
-		"price": 200.50,
+		"art" : "Art1",
+		"price": 100.50,
 		"co2": 9.99,
 		"happiness": 20,
 		"snippet": "Produkt2 Beschreibung"}}
