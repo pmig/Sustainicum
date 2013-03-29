@@ -1,0 +1,37 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* fixing header image size*/
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sidenav {
+	position: fixed;
+	width:16%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
