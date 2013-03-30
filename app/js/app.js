@@ -10,6 +10,8 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
   $locationProvider.html5Mode(false);
   $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: HomeCtrl});
   $routeProvider.when('/spiel', {templateUrl: 'partials/spiel.html', controller: SpielCtrl});
+  $routeProvider.when('/spiel/szenario2', {templateUrl: 'partials/spiel2.html', controller: Spiel2Ctrl});
+  $routeProvider.when('/spiel/szenario3', {templateUrl: 'partials/spiel3.html', controller: Spiel3Ctrl});
   $routeProvider.when('/ueberuns',{templateUrl: 'partials/ueberuns.html', controller: UeberunsCtrl});
   $routeProvider.otherwise({redirectTo: '/'});
 
