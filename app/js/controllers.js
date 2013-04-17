@@ -20,8 +20,30 @@ function SpielCtrl($scope,$http) {
     "happiness": 100
   };
 
+  $scope.open = function () {
+    $scope.shouldBeOpen = true;
+  };
+
+  $scope.close = function () {
+    $scope.closeMsg = 'I was closed at: ' + new Date();
+    $scope.shouldBeOpen = false;
+  };
+
+  $scope.opts = {
+    backdropFade: true,
+    dialogFade:true
+  };
+
+  $scope.scenario1Description = {
+    "Milchprodukte" : "Kühe (und auch Schafen und Ziegen) tragen wegen ihres Verdauungsapparats (Methan) beträchtlich zur Treibhausgasproduktion bei. Das spiegelt sich auch in Milchprodukten wider. Je höher der Fettanteil der Milchprodukte, desto höher der Effekt. Das erklärt sich teilweise aus den Emission in der Verarbeitungskette, andererseits aus den vergleichsweise großen Mengen an Rohmilch, die für verarbeitete Milchprodukte benötigt werden. Bioprodukte tragen in geringerem Ausmaß zur Treibhausgasproduktion bei. Der geringere Ertrag der Kühe wird durch den Verzicht auf konventionelle (industriell gefertigten) Futtermittel überkompensiert."
+  };
+
   var cart = [];
   $scope.alerts = [];
+
+  $scope.getDescription = function (art) {
+
+  };
 
   $scope.getBudget = function (format) {
     var tmpSum = 0;

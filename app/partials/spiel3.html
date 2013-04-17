@@ -3,15 +3,15 @@
     <div class="row">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked sidenav hidden-phone">
-                <li><a href="#/spiel">Szenario1<i class="icon-chevron-right pull-right"></i></a></li>
-                <li><a href="#/spiel/szenario2">Szenario2<i class="icon-chevron-right pull-right"></i></a></li>
-                <li><a href="#/spiel/szenario3">Szenario3<i class="icon-chevron-right pull-right"></i></a></li>
+                <li><a href="#/spiel">Picknick<i class="icon-chevron-right pull-right"></i></a></li>
+                <li><a href="#/spiel/szenario2">Lernwochenende<i class="icon-chevron-right pull-right"></i></a></li>
+                <li class="active"><a href="#/spiel/szenario3">Grillfest<i class="icon-chevron-right pull-right"></i></a></li>
             </ul>
         </div>
         <div class="span9">
             <h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro asperiores mollitia ullam nemo possimus iure autem facilis ipsam provident harum delectus minus explicabo. Expedita laboriosam ea est minus animi earum quidem rerum architecto modi dolores possimus saepe consequatur illum eos magnam! Illum consectetur tempora dolor possimus minima qui non quidem porro est voluptate ex eaque cum minus provident at nesciunt nulla similique officiis labore beatae optio excepturi expedita. Voluptate in doloremque qui minima nesciunt nihil esse eligendi quaerat eaque et accusantium magni recusandae impedit maxime voluptatem quasi aut. Magnam distinctio culpa! Libero ad ex voluptates tempora facilis ipsa similique?</p>
+            <p>Es ist Frühling, das Wetter schon seit einiger Zeit sonnig und am kommenden Wochenende auch endlich mal richtig warm. Die Prüfungen des Wintersemesters sind vorbei, die ersten Präsentationen hast du auch hinter dir und die kommenden Prüfungen sind weit genug entfernt. Zeit einmal das Leben zu genießen und mit ein paar Freunden ein wenig zu feiern. Da passt es wunderbar, dass dir deine Verwandten für einen Samstag ihren Garten überlassen. Du entscheidest dich ein paar KommilitonInnen zu einem Grillfest einzuladen. Du hast dich bereit erklärt für sämtliche Getränke und das Essen zu sorgen und dafür von jeder/ jedem 10 Euro kassiert. Insgesamt werdet ihr zu 10. sein, wobei du von 2 Leuten weißt, dass sie kein Fleisch essen.</p>
             <div id="s1">
                 <h2>Szenario3</h2>
                 <h3>Szenario Übersicht</h3>
@@ -58,7 +58,7 @@
                                 <th>Produkt</th>
                                 <th>Größe<br />(g oder ml)</th>
                                 <th>Preis</th>
-                                <th>CO<sup>2</sup> Verbrauch</th>
+                                <th>CO<sub>2</sub>eq Verbrauch</th>
                                 <th>Stück</th>
                             </tr>
                         </thead>
@@ -68,7 +68,7 @@
                                 <td>{{products.product.name}}</td>
                                 <td>{{products.product.size}}</td>
                                 <td>{{products.product.price|currency:"&euro;"}}</td>
-                                <td>{{products.product.co2|number:2}} mg/m<sup>2</sup></td>
+                                <td>{{products.product.co2|number:2}} g</td>
                                 <td>
                                     <div class="btn-group">
                                         <button type="button" class="btn" ng-class="{active: '0'==getAmount(products.product.id)}" ng-click="exec(products.product.id,0)">0</button>
@@ -85,13 +85,6 @@
                     
                 </dl>
             </div>
-            <hr>
-            <div id="s2">
-                <h2>test</h2>
-                <div height="200px"></div>
-            </div>
-
-            
         </div>
     </div>
 </div>
