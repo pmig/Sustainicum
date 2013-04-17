@@ -2,13 +2,6 @@
 
 /* Controllers */
 
-
-function HomeCtrl($scope,$http) {
-
-}
-HomeCtrl.$inject = ['$scope','$http'];
-
-
 function SpielCtrl($scope,$http) {
   $http.get('./data/scenario1.json').success(function(data) {
     $scope.scenario1Products = data;
@@ -309,8 +302,3 @@ function Spiel3Ctrl($scope,$http) {
   };
 }
 Spiel3Ctrl.$inject = ['$scope','$http'];
-
-function UeberunsCtrl($scope,$http) {
-
-}
-UeberunsCtrl.$inject = ['$scope','$http'];
