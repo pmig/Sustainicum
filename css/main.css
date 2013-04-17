@@ -14,14 +14,46 @@
 }
 
 .sidenav {
-	position: fixed;
-	width:16%;
-}
+   position:fixed;
+   top:60px;
+   width:16%;
+   max-width: 250px;
+ }
 
+ .fixed-content {
+  background-color: #fff;
+  position: fixed;
+  width: 72%;
+  max-width: 870px;
+  z-index: 200;
+ }
 
+ .content {
+  margin-top: 200px;
+ }
 
+ @media (max-width: 767px) {
+   .sidenav {
+     width:auto;
+   }
+ }
 
+ @media (max-width: 979px) {
+   .sidenav {
+      position:static;
+      width: auto;
+   }
+ }
 
+ @media (max-width: 1200px) {
+  .fixed-content {
+    background-color: #fff;
+    position: fixed;
+    width: 66%;
+    max-width: 870px;
+    z-index: 200;
+  }
+ }
 
 
 

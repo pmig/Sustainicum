@@ -3,15 +3,15 @@
     <div class="row">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked sidenav hidden-phone">
-                <li><a href="#/spiel">Szenario1<i class="icon-chevron-right pull-right"></i></a></li>
-                <li><a href="#/spiel/szenario2">Szenario2<i class="icon-chevron-right pull-right"></i></a></li>
-                <li><a href="#/spiel/szenario3">Szenario3<i class="icon-chevron-right pull-right"></i></a></li>
+                <li><a href="#/spiel">Picknick<i class="icon-chevron-right pull-right"></i></a></li>
+                <li class="active"><a href="#/spiel/szenario2">Lernwochenende<i class="icon-chevron-right pull-right"></i></a></li>
+                <li><a href="#/spiel/szenario3">Grillfest<i class="icon-chevron-right pull-right"></i></a></li>
             </ul>
         </div>
         <div class="span9">
             <h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro asperiores mollitia ullam nemo possimus iure autem facilis ipsam provident harum delectus minus explicabo. Expedita laboriosam ea est minus animi earum quidem rerum architecto modi dolores possimus saepe consequatur illum eos magnam! Illum consectetur tempora dolor possimus minima qui non quidem porro est voluptate ex eaque cum minus provident at nesciunt nulla similique officiis labore beatae optio excepturi expedita. Voluptate in doloremque qui minima nesciunt nihil esse eligendi quaerat eaque et accusantium magni recusandae impedit maxime voluptatem quasi aut. Magnam distinctio culpa! Libero ad ex voluptates tempora facilis ipsa similique?</p>
+            <p>Das Wintersemester ist beinahe zu Ende und du stellst mit schrecken fest, dass du für die Prüfungen in der nächsten Woche noch sehr viel zu lernen hast. Du entschließt dich von Freitag Mittag bis Sonntag Abend ein intensives Lernwochenende zu machen und willst den Freitag Vormittag für die Besorgungen dafür zu nutzen. Der Blick in deinen Kühlschrank ist ebenso ernüchternd, wie der in den Vorratsschrank. Bis auf Gewürze, Öl, Essig, Zucker, Mehl, Kaffee und Tee hast du nichts mehr zu Hause. Außerdem ist dein Monatsbudget beinahe aufgebraucht. Die 20 Euro in deiner Geldtasche müssen also reichen.</p>
             <div id="s1">
                 <h2>Szenario2</h2>
                 <h3>Szenario Übersicht</h3>
@@ -27,8 +27,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Verbrauchtes CO<sub>2</sub>:</td>
-                            <td>{{getCo2()|number:2}} mg/m<sup>2</sup></td>
+                            <td>Verbrauchte CO<sub>2</sub>eq:</td>
+                            <td>{{getCo2()|number:2}} g</td>
                             <td>
                                 <div class="progress progress-danger progress-striped active">
                                     <div class="bar" style="width: {{getCo2('pro')}}%;"></div>
