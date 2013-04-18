@@ -2,9 +2,21 @@
 
 /* Controllers */
 
+
+
 function SpielCtrl($scope,$http) {
+  var cart = [];
+  var scenarioDescription = {};
+  $scope.alerts = [];
+  $scope.modalContent = "";
+  $scope.modalHeader = "";
+
   $http.get('./data/scenario1.json').success(function(data) {
     $scope.scenario1Products = data;
+  });
+
+  $http.get('./data/productDescription.json').success(function(data) {
+    scenarioDescription = data;
   });
 
   $scope.scenario1Meta = {
@@ -13,7 +25,10 @@ function SpielCtrl($scope,$http) {
     "happiness": 100
   };
 
-  $scope.open = function () {
+  $scope.open = function(art) {
+    console.log(art);
+    $scope.modalHeader = art;
+    $scope.modalContent = scenarioDescription[art];
     $scope.shouldBeOpen = true;
   };
 
@@ -25,17 +40,6 @@ function SpielCtrl($scope,$http) {
   $scope.opts = {
     backdropFade: true,
     dialogFade:true
-  };
-
-  $scope.scenario1Description = {
-    "Milchprodukte" : "Kühe (und auch Schafen und Ziegen) tragen wegen ihres Verdauungsapparats (Methan) beträchtlich zur Treibhausgasproduktion bei. Das spiegelt sich auch in Milchprodukten wider. Je höher der Fettanteil der Milchprodukte, desto höher der Effekt. Das erklärt sich teilweise aus den Emission in der Verarbeitungskette, andererseits aus den vergleichsweise großen Mengen an Rohmilch, die für verarbeitete Milchprodukte benötigt werden. Bioprodukte tragen in geringerem Ausmaß zur Treibhausgasproduktion bei. Der geringere Ertrag der Kühe wird durch den Verzicht auf konventionelle (industriell gefertigten) Futtermittel überkompensiert."
-  };
-
-  var cart = [];
-  $scope.alerts = [];
-
-  $scope.getDescription = function (art) {
-
   };
 
   $scope.getBudget = function (format) {
@@ -117,9 +121,24 @@ function SpielCtrl($scope,$http) {
 }
 SpielCtrl.$inject = ['$scope','$http'];
 
+/**
+ * Controller 2
+ */
+
 function Spiel2Ctrl($scope,$http) {
+  var scenarioDescription = {};
+  var cart = [];
+  $scope.alerts = [];
+  $scope.modalContent = "";
+  $scope.modalHeader = "";
+
+  
   $http.get('./data/scenario2.json').success(function(data) {
     $scope.scenario1Products = data;
+  });
+
+  $http.get('./data/productDescription.json').success(function(data) {
+    scenarioDescription = data;
   });
 
   $scope.scenario2Meta = {
@@ -128,8 +147,22 @@ function Spiel2Ctrl($scope,$http) {
     "happiness": 100
   };
 
-  var cart = [];
-  $scope.alerts = [];
+  $scope.open = function(art) {
+    console.log(art);
+    $scope.modalHeader = art;
+    $scope.modalContent = scenarioDescription[art];
+    $scope.shouldBeOpen = true;
+  };
+
+  $scope.close = function () {
+    $scope.closeMsg = 'I was closed at: ' + new Date();
+    $scope.shouldBeOpen = false;
+  };
+
+  $scope.opts = {
+    backdropFade: true,
+    dialogFade:true
+  };
 
   $scope.getBudget = function (format) {
     var tmpSum = 0;
@@ -210,9 +243,23 @@ function Spiel2Ctrl($scope,$http) {
 }
 Spiel2Ctrl.$inject = ['$scope','$http'];
 
+/**
+ * Controller 3
+ */
+
 function Spiel3Ctrl($scope,$http) {
+  var scenarioDescription = {};
+  var cart = [];
+  $scope.alerts = [];
+  $scope.modalContent = "";
+  $scope.modalHeader = "";
+
   $http.get('./data/scenario3.json').success(function(data) {
     $scope.scenario3Products = data;
+  });
+
+  $http.get('./data/productDescription.json').success(function(data) {
+    scenarioDescription = data;
   });
 
   $scope.scenario3Meta = {
@@ -221,8 +268,22 @@ function Spiel3Ctrl($scope,$http) {
     "happiness": 100
   };
 
-  var cart = [];
-  $scope.alerts = [];
+  $scope.open = function(art) {
+    console.log(art);
+    $scope.modalHeader = art;
+    $scope.modalContent = scenarioDescription[art];
+    $scope.shouldBeOpen = true;
+  };
+
+  $scope.close = function () {
+    $scope.closeMsg = 'I was closed at: ' + new Date();
+    $scope.shouldBeOpen = false;
+  };
+
+  $scope.opts = {
+    backdropFade: true,
+    dialogFade:true
+  };
 
   $scope.getBudget = function (format) {
     var tmpSum = 0;
