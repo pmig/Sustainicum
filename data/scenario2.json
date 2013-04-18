@@ -1,0 +1,1422 @@
+
+[
+  {
+    "product": {
+      "id": 0,
+      "art": "Backwaren",
+      "name": "Mischbrot bio",
+      "size": 500,
+      "price": 1.5,
+      "co2": 326.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 1,
+      "art": "Backwaren",
+      "name": "Mischbrot konventionell",
+      "size": 500,
+      "price": 1,
+      "co2": 384,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 2,
+      "art": "Backwaren",
+      "name": "Semmel bio 1 Stück",
+      "size": 80,
+      "price": 0.4,
+      "co2": 54.72,
+      "happiness": 0.83
+    }
+  },
+  {
+    "product": {
+      "id": 3,
+      "art": "Backwaren",
+      "name": "Semmel bio 6 Stück",
+      "size": 480,
+      "price": 2.4,
+      "co2": 328.32,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 4,
+      "art": "Backwaren",
+      "name": "Semmel konv. 1 Stück",
+      "size": 80,
+      "price": 0.25,
+      "co2": 67.2,
+      "happiness": 0.83
+    }
+  },
+  {
+    "product": {
+      "id": 5,
+      "art": "Backwaren",
+      "name": "Semmel konv. 6 Stück",
+      "size": 480,
+      "price": 1.5,
+      "co2": 403.2,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 6,
+      "art": "Backwaren",
+      "name": "Vollkornbrot bio",
+      "size": 500,
+      "price": 2.3,
+      "co2": 289,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 7,
+      "art": "Backwaren",
+      "name": "Vollkornbrot konv.",
+      "size": 500,
+      "price": 1.8,
+      "co2": 366,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 8,
+      "art": "Backwaren",
+      "name": "Weizenbrot bio",
+      "size": 500,
+      "price": 2,
+      "co2": 225.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 9,
+      "art": "Backwaren",
+      "name": "Weizenbrot konv.",
+      "size": 500,
+      "price": 1.3,
+      "co2": 289.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 10,
+      "art": "Eier",
+      "name": "Freilandeier bio (L) (1kg = 14St.)",
+      "size": 430,
+      "price": 1.8,
+      "co2": 451.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 11,
+      "art": "Eier",
+      "name": "Freilandeier konv. (L) (1kg = 14St.)",
+      "size": 430,
+      "price": 1.5,
+      "co2": 1114.1299999999999,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 12,
+      "art": "Fertiggerichte",
+      "name": "Gulasch Fertiggericht",
+      "size": 500,
+      "price": 2.5,
+      "co2": 1685,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 13,
+      "art": "Fertiggerichte",
+      "name": "Kartoffelpüree",
+      "size": 500,
+      "price": 1,
+      "co2": 1870,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 14,
+      "art": "Fertiggerichte",
+      "name": "Pizza TK",
+      "size": 330,
+      "price": 2.7,
+      "co2": 409.20000000000005,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 15,
+      "art": "Fertiggerichte",
+      "name": "Pommes TK",
+      "size": 500,
+      "price": 1,
+      "co2": 2835,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 16,
+      "art": "Fertiggerichte",
+      "name": "Tagliatelle TK",
+      "size": 500,
+      "price": 4,
+      "co2": 915,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 17,
+      "art": "Fisch",
+      "name": "Meeresfisch ganz frisch",
+      "size": 400,
+      "price": 4,
+      "co2": 480,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 18,
+      "art": "Fisch",
+      "name": "Meeresfisch ganz frisch",
+      "size": 800,
+      "price": 8,
+      "co2": 960,
+      "happiness": 16
+    }
+  },
+  {
+    "product": {
+      "id": 19,
+      "art": "Fisch",
+      "name": "Meeresfisch ganz TK",
+      "size": 400,
+      "price": 4,
+      "co2": 1120,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 20,
+      "art": "Fisch",
+      "name": "Meeresfisch ganz TK",
+      "size": 800,
+      "price": 8,
+      "co2": 2240,
+      "happiness": 16
+    }
+  },
+  {
+    "product": {
+      "id": 21,
+      "art": "Fisch",
+      "name": "Meeresfisch TK Filet",
+      "size": 400,
+      "price": 4,
+      "co2": 1280,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 22,
+      "art": "Fisch",
+      "name": "Meeresfisch ganz TK",
+      "size": 800,
+      "price": 8,
+      "co2": 2240,
+      "happiness": 16
+    }
+  },
+  {
+    "product": {
+      "id": 23,
+      "art": "Fisch",
+      "name": "Sußwasserfisch TK",
+      "size": 400,
+      "price": 4,
+      "co2": 1280,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 24,
+      "art": "Fisch",
+      "name": "Sußwasserfisch TK",
+      "size": 800,
+      "price": 8,
+      "co2": 2560,
+      "happiness": 16
+    }
+  },
+  {
+    "product": {
+      "id": 25,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel bio (Brustfilet)",
+      "size": 250,
+      "price": 5.5,
+      "co2": 805,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 26,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel bio (Brustfilet)",
+      "size": 750,
+      "price": 16,
+      "co2": 2415,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 27,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel konv. (Brustfilet)",
+      "size": 250,
+      "price": 2.5,
+      "co2": 917.5,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 28,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel konv. (Brustfilet)",
+      "size": 750,
+      "price": 7.5,
+      "co2": 2752.5,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 29,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel TK bio",
+      "size": 250,
+      "price": 5.5,
+      "co2": 1010,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 30,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel TK bio",
+      "size": 750,
+      "price": 16,
+      "co2": 3030,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 31,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel TK konv.",
+      "size": 250,
+      "price": 2.5,
+      "co2": 1122.5,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 32,
+      "art": "Fleisch/Wurst",
+      "name": "Geflügel TK konv.",
+      "size": 750,
+      "price": 7.5,
+      "co2": 3367.5,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 33,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch bio",
+      "size": 250,
+      "price": 6.8,
+      "co2": 2900,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 34,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch bio",
+      "size": 750,
+      "price": 20,
+      "co2": 8700,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 35,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch konv.",
+      "size": 250,
+      "price": 3.8,
+      "co2": 3375,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 36,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch konv.",
+      "size": 750,
+      "price": 11,
+      "co2": 10125,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 37,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch TK bio",
+      "size": 250,
+      "price": 6.8,
+      "co2": 3100,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 38,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch TK bio",
+      "size": 750,
+      "price": 20,
+      "co2": 9300,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 39,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch TK konv.",
+      "size": 250,
+      "price": 3.8,
+      "co2": 3575,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 40,
+      "art": "Fleisch/Wurst",
+      "name": "Rindfleisch TK konv.",
+      "size": 750,
+      "price": 11,
+      "co2": 10725,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 41,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch bio (Karee, Schopf)",
+      "size": 250,
+      "price": 4,
+      "co2": 802.5,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 42,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch bio (Karee, Schopf)",
+      "size": 750,
+      "price": 12,
+      "co2": 2407.5,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 43,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch konv. (Karee, Schopf)",
+      "size": 250,
+      "price": 2,
+      "co2": 855,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 44,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch konv. (Karee, Schopf)",
+      "size": 750,
+      "price": 6,
+      "co2": 2565,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 45,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch TK bio",
+      "size": 250,
+      "price": 4,
+      "co2": 1005,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 46,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch TK bio",
+      "size": 750,
+      "price": 12,
+      "co2": 3015,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 47,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch TK konv.",
+      "size": 250,
+      "price": 2,
+      "co2": 1060,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 48,
+      "art": "Fleisch/Wurst",
+      "name": "Schweinefleisch TK konv.",
+      "size": 750,
+      "price": 6,
+      "co2": 3180,
+      "happiness": 24
+    }
+  },
+  {
+    "product": {
+      "id": 49,
+      "art": "Fleisch/Wurst",
+      "name": "Schinken bio",
+      "size": 100,
+      "price": 2.2,
+      "co2": 445,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 50,
+      "art": "Fleisch/Wurst",
+      "name": "Schinken bio",
+      "size": 250,
+      "price": 5.5,
+      "co2": 1112.5,
+      "happiness": 10
+    }
+  },
+  {
+    "product": {
+      "id": 51,
+      "art": "Fleisch/Wurst",
+      "name": "Schinken konv.",
+      "size": 100,
+      "price": 1.2,
+      "co2": 474,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 52,
+      "art": "Fleisch/Wurst",
+      "name": "Schinken konv.",
+      "size": 250,
+      "price": 3,
+      "co2": 1185,
+      "happiness": 10
+    }
+  },
+  {
+    "product": {
+      "id": 53,
+      "art": "Fleisch/Wurst",
+      "name": "Schnittwurst bio",
+      "size": 100,
+      "price": 2.2,
+      "co2": 366,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 54,
+      "art": "Fleisch/Wurst",
+      "name": "Schnittwurst bio",
+      "size": 250,
+      "price": 5.5,
+      "co2": 915,
+      "happiness": 10
+    }
+  },
+  {
+    "product": {
+      "id": 55,
+      "art": "Fleisch/Wurst",
+      "name": "Schnittwurst konv.",
+      "size": 100,
+      "price": 1.2,
+      "co2": 395,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 56,
+      "art": "Fleisch/Wurst",
+      "name": "Schnittwurst konv.",
+      "size": 250,
+      "price": 3,
+      "co2": 987.5,
+      "happiness": 10
+    }
+  },
+  {
+    "product": {
+      "id": 57,
+      "art": "Getränke",
+      "name": "Apfelsaft bio",
+      "size": 1000,
+      "price": 2,
+      "co2": 225,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 58,
+      "art": "Getränke",
+      "name": "Apfelsaft konv.",
+      "size": 1000,
+      "price": 1.2,
+      "co2": 264,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 59,
+      "art": "Getränke",
+      "name": "Mineralwasser 0,5l PET Flasche",
+      "size": 500,
+      "price": 0.5,
+      "co2": 80,
+      "happiness": 0.5
+    }
+  },
+  {
+    "product": {
+      "id": 60,
+      "art": "Getränke",
+      "name": "Mineralwasser 1,5l PET Falsche",
+      "size": 1500,
+      "price": 0.6,
+      "co2": 160,
+      "happiness": 1.5
+    }
+  },
+  {
+    "product": {
+      "id": 61,
+      "art": "Getränke",
+      "name": "Softdrink 1,5l PET Flasche",
+      "size": 1500,
+      "price": 1.2,
+      "co2": 250,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 62,
+      "art": "Getränke",
+      "name": "Softdrink Dose",
+      "size": 330,
+      "price": 0.5,
+      "co2": 200,
+      "happiness": 1
+    }
+  },
+  {
+    "product": {
+      "id": 63,
+      "art": "Getränke",
+      "name": "Traubensaft bio",
+      "size": 1000,
+      "price": 2.2,
+      "co2": 402,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 64,
+      "art": "Getränke",
+      "name": "Traubensaft konv.",
+      "size": 1000,
+      "price": 1.4,
+      "co2": 501,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 65,
+      "art": "Getreideprodukte",
+      "name": "Basismüsli  (Haferflocken) konv.",
+      "size": 500,
+      "price": 1.5,
+      "co2": 512,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 66,
+      "art": "Getreideprodukte",
+      "name": "Basismüsli (Haferflocken) bio",
+      "size": 500,
+      "price": 2.3,
+      "co2": 358,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 67,
+      "art": "Getreideprodukte",
+      "name": "Müslimix (Obst, Nüsse) bio",
+      "size": 500,
+      "price": 4,
+      "co2": 454.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 68,
+      "art": "Getreideprodukte",
+      "name": "Müslimix (Obst, Nüsse) konv.",
+      "size": 500,
+      "price": 3,
+      "co2": 560,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 69,
+      "art": "Getreideprodukte",
+      "name": "Nudeln bio",
+      "size": 500,
+      "price": 1.8,
+      "co2": 385,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 70,
+      "art": "Getreideprodukte",
+      "name": "Nudeln konv.",
+      "size": 500,
+      "price": 1,
+      "co2": 459.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 71,
+      "art": "Getreideprodukte",
+      "name": "Reis bio",
+      "size": 500,
+      "price": 1.5,
+      "co2": 1807,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 72,
+      "art": "Getreideprodukte",
+      "name": "Reis konv.",
+      "size": 500,
+      "price": 0.8,
+      "co2": 2065,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 73,
+      "art": "Milchprodukte",
+      "name": "Butter bio",
+      "size": 125,
+      "price": 1,
+      "co2": 2762.5,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 74,
+      "art": "Milchprodukte",
+      "name": "Butter konv.",
+      "size": 125,
+      "price": 0.7,
+      "co2": 2975,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 75,
+      "art": "Milchprodukte",
+      "name": "Frischkäse bio",
+      "size": 200,
+      "price": 1.5,
+      "co2": 360,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 76,
+      "art": "Milchprodukte",
+      "name": "Frischkäse konv.",
+      "size": 200,
+      "price": 0.9,
+      "co2": 386,
+      "happiness": 4
+    }
+  },
+  {
+    "product": {
+      "id": 77,
+      "art": "Milchprodukte",
+      "name": "Früchtejoghurt (Erdbeer) 0,9% bio",
+      "size": 200,
+      "price": 0.6,
+      "co2": 171.60000000000002,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 78,
+      "art": "Milchprodukte",
+      "name": "Früchtejoghurt (Erdbeer) 0,9% konv.",
+      "size": 200,
+      "price": 0.4,
+      "co2": 191.20000000000002,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 79,
+      "art": "Milchprodukte",
+      "name": "Früchtejoghurt (Erdbeer) 1,8% bio",
+      "size": 200,
+      "price": 0.6,
+      "co2": 216,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 80,
+      "art": "Milchprodukte",
+      "name": "Früchtejoghurt (Erdbeer) 1,8% konv.",
+      "size": 200,
+      "price": 0.4,
+      "co2": 240,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 81,
+      "art": "Milchprodukte",
+      "name": "Hartkäse bio",
+      "size": 200,
+      "price": 2.4,
+      "co2": 1586,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 82,
+      "art": "Milchprodukte",
+      "name": "Hartkäse konv.",
+      "size": 200,
+      "price": 1,
+      "co2": 1698,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 83,
+      "art": "Milchprodukte",
+      "name": "Joghurt 0,9% bio",
+      "size": 200,
+      "price": 0.5,
+      "co2": 146.8,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 84,
+      "art": "Milchprodukte",
+      "name": "Joghurt 0,9% konv.",
+      "size": 200,
+      "price": 0.3,
+      "co2": 167.60000000000002,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 85,
+      "art": "Milchprodukte",
+      "name": "Joghurt 3,6% bio",
+      "size": 200,
+      "price": 0.5,
+      "co2": 230.8,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 86,
+      "art": "Milchprodukte",
+      "name": "Joghurt 3,6% konv",
+      "size": 200,
+      "price": 0.3,
+      "co2": 273.8,
+      "happiness": 2
+    }
+  },
+  {
+    "product": {
+      "id": 87,
+      "art": "Milchprodukte",
+      "name": "Leichtmilch bio",
+      "size": 500,
+      "price": 0.6,
+      "co2": 250,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 88,
+      "art": "Milchprodukte",
+      "name": "Leichtmilch konv.",
+      "size": 500,
+      "price": 0.5,
+      "co2": 281.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 89,
+      "art": "Milchprodukte",
+      "name": "Trinkjoghurt bio",
+      "size": 500,
+      "price": 1.6,
+      "co2": 584,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 90,
+      "art": "Milchprodukte",
+      "name": "Trinkjoghurt konv.",
+      "size": 500,
+      "price": 1.1,
+      "co2": 674.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 91,
+      "art": "Milchprodukte",
+      "name": "Vollmilch bio",
+      "size": 500,
+      "price": 0.6,
+      "co2": 513.5,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 92,
+      "art": "Milchprodukte",
+      "name": "Vollmilch konv.",
+      "size": 500,
+      "price": 0.5,
+      "co2": 593,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 93,
+      "art": "Obst/Gemüse",
+      "name": "Äpfel bio",
+      "size": 500,
+      "price": 1.5,
+      "co2": 78.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 94,
+      "art": "Obst/Gemüse",
+      "name": "Äpfel konv.",
+      "size": 500,
+      "price": 0.8,
+      "co2": 94,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 95,
+      "art": "Obst/Gemüse",
+      "name": "Birnen bio",
+      "size": 500,
+      "price": 2,
+      "co2": 101.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 96,
+      "art": "Obst/Gemüse",
+      "name": "Birnen konv.",
+      "size": 500,
+      "price": 1,
+      "co2": 124.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 97,
+      "art": "Obst/Gemüse",
+      "name": "Gurken bio",
+      "size": 400,
+      "price": 0.8,
+      "co2": 76,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 98,
+      "art": "Obst/Gemüse",
+      "name": "Gurken konv.",
+      "size": 400,
+      "price": 0.4,
+      "co2": 92.80000000000001,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 99,
+      "art": "Obst/Gemüse",
+      "name": "Karotten bio",
+      "size": 500,
+      "price": 1,
+      "co2": 40.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 100,
+      "art": "Obst/Gemüse",
+      "name": "Karotten konv.",
+      "size": 500,
+      "price": 0.5,
+      "co2": 48.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 101,
+      "art": "Obst/Gemüse",
+      "name": "Kartoffeln bio.",
+      "size": 500,
+      "price": 1,
+      "co2": 76,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 102,
+      "art": "Obst/Gemüse",
+      "name": "Kartoffeln konv.",
+      "size": 500,
+      "price": 0.5,
+      "co2": 91.5,
+      "happiness": 5
+    }
+  },
+  {
+    "product": {
+      "id": 103,
+      "art": "Obst/Gemüse",
+      "name": "Kopfsalat bio",
+      "size": 600,
+      "price": 0.9,
+      "co2": 65.39999999999999,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 104,
+      "art": "Obst/Gemüse",
+      "name": "Kopfsalat konv.",
+      "size": 600,
+      "price": 0.6,
+      "co2": 74.39999999999999,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 105,
+      "art": "Marmelade",
+      "name": "Marmelade bio",
+      "size": 300,
+      "price": 3.6,
+      "co2": 318,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 106,
+      "art": "Marmelade",
+      "name": "Marmelade konv.",
+      "size": 300,
+      "price": 1.8,
+      "co2": 363,
+      "happiness": 6
+    }
+  },
+  {
+    "product": {
+      "id": 107,
+      "art": "Obst/Gemüse",
+      "name": "Paprika bio",
+      "size": 200,
+      "price": 0.8,
+      "co2": 23.200000000000003,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 108,
+      "art": "Obst/Gemüse",
+      "name": "Parika konv.",
+      "size": 200,
+      "price": 0.4,
+      "co2": 29.400000000000002,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 109,
+      "art": "Obst/Gemüse",
+      "name": "Radieschen bio",
+      "size": 500,
+      "price": 1.3,
+      "co2": 39.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 110,
+      "art": "Obst/Gemüse",
+      "name": "Radieschen konv.",
+      "size": 500,
+      "price": 0.7,
+      "co2": 62,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 111,
+      "art": "Obst/Gemüse",
+      "name": "Tomaten bio",
+      "size": 500,
+      "price": 2,
+      "co2": 85.5,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 112,
+      "art": "Obst/Gemüse",
+      "name": "Tomaten konv.",
+      "size": 500,
+      "price": 1,
+      "co2": 97,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 113,
+      "art": "Obst/Gemüse",
+      "name": "Zucchini bio",
+      "size": 300,
+      "price": 1.2,
+      "co2": 57.599999999999994,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 114,
+      "art": "Obst/Gemüse",
+      "name": "Zucchini konv.",
+      "size": 300,
+      "price": 0.6,
+      "co2": 68.39999999999999,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 115,
+      "art": "Obst/Gemüse",
+      "name": "Zwiebel bio",
+      "size": 500,
+      "price": 1.3,
+      "co2": 68,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 116,
+      "art": "Obst/Gemüse",
+      "name": "Zwiebel konv.",
+      "size": 500,
+      "price": 0.5,
+      "co2": 78,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 117,
+      "art": "Sojaprodukte",
+      "name": "Soja Schnetzel bio",
+      "size": 250,
+      "price": 3.8,
+      "co2": 265,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 118,
+      "art": "Sojaprodukte",
+      "name": "Soja Schnetzel konv.",
+      "size": 250,
+      "price": 2.5,
+      "co2": 590,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 119,
+      "art": "Sojaprodukte",
+      "name": "Tofu bio",
+      "size": 250,
+      "price": 2,
+      "co2": 175,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 120,
+      "art": "Sojaprodukte",
+      "name": "Tofu konv.",
+      "size": 250,
+      "price": 1.5,
+      "co2": 275,
+      "happiness": 8
+    }
+  },
+  {
+    "product": {
+      "id": 121,
+      "art": "Süßigkeiten",
+      "name": "Kekse bio",
+      "size": 200,
+      "price": 3.6,
+      "co2": 167.60000000000002,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 122,
+      "art": "Süßigkeiten",
+      "name": "Kekse konv.",
+      "size": 200,
+      "price": 2,
+      "co2": 187.60000000000002,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 123,
+      "art": "Süßigkeiten",
+      "name": "Milchschokolade bio",
+      "size": 100,
+      "price": 2.5,
+      "co2": 306.2,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 124,
+      "art": "Süßigkeiten",
+      "name": "Milchschokolade konv.",
+      "size": 100,
+      "price": 1,
+      "co2": 350,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 125,
+      "art": "Süßigkeiten",
+      "name": "Schokoladde weiß bio",
+      "size": 100,
+      "price": 2.5,
+      "co2": 350,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 126,
+      "art": "Süßigkeiten",
+      "name": "Schokolade dunkel bio",
+      "size": 100,
+      "price": 1,
+      "co2": 170,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 127,
+      "art": "Süßigkeiten",
+      "name": "Schokolade dunkel konv.",
+      "size": 100,
+      "price": 2.5,
+      "co2": 195,
+      "happiness": 3
+    }
+  },
+  {
+    "product": {
+      "id": 128,
+      "art": "Süßigkeiten",
+      "name": "Schokolade weiß konv.",
+      "size": 100,
+      "price": 1,
+      "co2": 400,
+      "happiness": 3
+    }
+  }
+]

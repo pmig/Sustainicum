@@ -1,5 +1,4 @@
 <div>
-    
     <div class="row">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked sidenav hidden-phone">
@@ -9,13 +8,8 @@
             </ul>
         </div>
         <div class="span9">
-            <h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
-
-            <p>Das Wintersemester ist beinahe zu Ende und du stellst mit schrecken fest, dass du für die Prüfungen in der nächsten Woche noch sehr viel zu lernen hast. Du entschließt dich von Freitag Mittag bis Sonntag Abend ein intensives Lernwochenende zu machen und willst den Freitag Vormittag für die Besorgungen dafür zu nutzen. Der Blick in deinen Kühlschrank ist ebenso ernüchternd, wie der in den Vorratsschrank. Bis auf Gewürze, Öl, Essig, Zucker, Mehl, Kaffee und Tee hast du nichts mehr zu Hause. Außerdem ist dein Monatsbudget beinahe aufgebraucht. Die 20 Euro in deiner Geldtasche müssen also reichen.</p>
-            <div id="s1">
-                <h2>Szenario2</h2>
-                <h3>Szenario Übersicht</h3>
-                <table class="table table-bordered">
+            <div class="fixed-content">
+                <table class="table table-bordered fixedtable">
                     <tbody>
                         <tr>
                             <td class="span2">Verfügbares Geld:</td>
@@ -46,10 +40,24 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
-                
-                <h3>Produktauswahl</h3>
+            </div>
+            <div class="content">
+                <h1>Lernwochenende</h1>
+                <h2>Szenario Beschreibung</h2>
+                <p>Das Wintersemester ist beinahe zu Ende und du stellst mit schrecken fest, dass du für die Prüfungen in der nächsten Woche noch sehr viel zu lernen hast. Du entschließt dich von Freitag Mittag bis Sonntag Abend ein intensives Lernwochenende zu machen und willst den Freitag Vormittag für die Besorgungen dafür zu nutzen. Der Blick in deinen Kühlschrank ist ebenso ernüchternd, wie der in den Vorratsschrank. Bis auf Gewürze, Öl, Essig, Zucker, Mehl, Kaffee und Tee hast du nichts mehr zu Hause. Außerdem ist dein Monatsbudget beinahe aufgebraucht. Die 20 Euro in deiner Geldtasche müssen also reichen.</p>
+                <h2>Produktauswahl</h2>
+                <div modal="shouldBeOpen" close="close()" options="opts">
+                    <div class="modal-header">
+                        <h4>{{modalHeader}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{modalContent}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+                    </div>
+                </div>
                 <dl>
                     <table class="table table-hover table-condensed">
                         <thead>
@@ -58,19 +66,19 @@
                                 <th>Produkt</th>
                                 <th>Größe<br />(g oder ml)</th>
                                 <th>Preis</th>
-                                <th>CO<sup>2</sup> Verbrauch</th>
+                                <th>CO<sub>2</sub>eq Verbrauch</th>
                                 <th>Stück</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="products in scenario1Products">
-                                <td>{{products.product.art}}</td>
+                                <td><button class="btn btn-small" ng-click="open(products.product.art)">{{products.product.art}}</button></td>
                                 <td>{{products.product.name}}</td>
                                 <td>{{products.product.size}}</td>
                                 <td>{{products.product.price|currency:"&euro;"}}</td>
-                                <td>{{products.product.co2|number:2}} mg/m<sup>2</sup></td>
+                                <td>{{products.product.co2|number:2}} g</td>
                                 <td>
-                                        <div class="btn-group">
+                                    <div class="btn-group">
                                         <button type="button" class="btn" ng-class="{active: '0'==getAmount(products.product.id)}" ng-click="exec(products.product.id,0)">0</button>
                                         <button type="button" class="btn" ng-class="{active: '1'==getAmount(products.product.id)}" ng-click="exec(products.product.id,1)">1</button>
                                         <button type="button" class="btn" ng-class="{active: '2'==getAmount(products.product.id)}" ng-click="exec(products.product.id,2)">2</button>
@@ -82,10 +90,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    
                 </dl>
             </div>
-            <hr>
         </div>
     </div>
 </div>

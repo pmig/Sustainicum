@@ -1,5 +1,4 @@
 <div>
-    
     <div class="row">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked sidenav hidden-phone">
@@ -47,23 +46,19 @@
                 <h1>Picknick</h1>
                 <h2>Szenario Beschreibung</h2>
                 <p>Das Wintersemester hat gerade begonnen und du und ein paar KommilitonInnen wollt einen der letzten schönen und warmen Herbst Samstage mit einem gemütlichen Picknick in einem Park in der Nähe eurer Uni verbringen. Du hast dich bereit erklärt den Einkauf zu besorgen. Danach trefft ihr euch bei dir um ggf. noch Gerichte vorzubereiten. Ihr werdet zu 6. sein und jede/r hat dir schon im Vorfeld 10 € für die Besorgungen gegeben. Es soll ein gemütlicher und ausgedehnter Nachmittag werden, an dem ihr euch über die Erlebnisse des Sommers austauschen könnt, gemeinsam auf das neue Semester anstoßen und vor allem auch gut und ausgiebig essen wollt.</p>
-
-                
                 <h2>Produktauswahl</h2>
+                <div modal="shouldBeOpen" close="close()" options="opts">
+                    <div class="modal-header">
+                        <h4>{{modalHeader}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{modalContent}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+                    </div>
+                </div>
                 <dl>
-                                <button class="btn" ng-click="open()">Open me!</button>
-                                <div modal="shouldBeOpen" close="close()" options="opts">
-                                    <div class="modal-header">
-                                        <h4>Produktinformation</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>{{getDescription('Milchprodukte')}}</p>
-                                        <p>{{scenario1Description['Milchprodukte']}}</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
-                                    </div>
-                                </div>
                     <table class="table table-hover table-condensed">
                         <thead>
                             <tr>
@@ -71,17 +66,17 @@
                                 <th>Produkt</th>
                                 <th>Größe<br />(g oder ml)</th>
                                 <th>Preis</th>
-                                <th>CO<sup>2</sup> Verbrauch</th>
+                                <th>CO<sub>2</sub>eq Verbrauch</th>
                                 <th>Stück</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="products in scenario1Products">
-                                <td>{{products.product.art}}</td>
+                                <td><button class="btn btn-small" ng-click="open(products.product.art)">{{products.product.art}}</button></td>
                                 <td>{{products.product.name}}</td>
                                 <td>{{products.product.size}}</td>
                                 <td>{{products.product.price|currency:"&euro;"}}</td>
-                                <td>{{products.product.co2|number:2}} mg/m<sup>2</sup></td>
+                                <td>{{products.product.co2|number:2}} g</td>
                                 <td>
                                     <div class="btn-group">
                                         <button type="button" class="btn" ng-class="{active: '0'==getAmount(products.product.id)}" ng-click="exec(products.product.id,0)">0</button>

@@ -1,5 +1,4 @@
 <div>
-    
     <div class="row">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked sidenav hidden-phone">
@@ -9,13 +8,8 @@
             </ul>
         </div>
         <div class="span9">
-            <h1>CO<sub>2</sub> Verbrauch Szenarios</h1>
-
-            <p>Es ist Frühling, das Wetter schon seit einiger Zeit sonnig und am kommenden Wochenende auch endlich mal richtig warm. Die Prüfungen des Wintersemesters sind vorbei, die ersten Präsentationen hast du auch hinter dir und die kommenden Prüfungen sind weit genug entfernt. Zeit einmal das Leben zu genießen und mit ein paar Freunden ein wenig zu feiern. Da passt es wunderbar, dass dir deine Verwandten für einen Samstag ihren Garten überlassen. Du entscheidest dich ein paar KommilitonInnen zu einem Grillfest einzuladen. Du hast dich bereit erklärt für sämtliche Getränke und das Essen zu sorgen und dafür von jeder/ jedem 10 Euro kassiert. Insgesamt werdet ihr zu 10. sein, wobei du von 2 Leuten weißt, dass sie kein Fleisch essen.</p>
-            <div id="s1">
-                <h2>Szenario3</h2>
-                <h3>Szenario Übersicht</h3>
-                <table class="table table-bordered">
+            <div class="fixed-content">
+                <table class="table table-bordered fixedtable">
                     <tbody>
                         <tr>
                             <td class="span2">Verfügbares Geld:</td>
@@ -27,8 +21,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Verbrauchtes CO<sub>2</sub>:</td>
-                            <td>{{getCo2()|number:2}} mg/m<sup>2</sup></td>
+                            <td>Verbrauchte CO<sub>2</sub>eq:</td>
+                            <td>{{getCo2()|number:2}} g</td>
                             <td>
                                 <div class="progress progress-danger progress-striped active">
                                     <div class="bar" style="width: {{getCo2('pro')}}%;"></div>
@@ -46,10 +40,24 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
-                
-                <h3>Produktauswahl</h3>
+            </div>
+            <div class="content">
+                <h1>Grillfest</h1>
+                <h2>Szenario Beschreibung</h2>
+                <p>Es ist Frühling, das Wetter schon seit einiger Zeit sonnig und am kommenden Wochenende auch endlich mal richtig warm. Die Prüfungen des Wintersemesters sind vorbei, die ersten Präsentationen hast du auch hinter dir und die kommenden Prüfungen sind weit genug entfernt. Zeit einmal das Leben zu genießen und mit ein paar Freunden ein wenig zu feiern. Da passt es wunderbar, dass dir deine Verwandten für einen Samstag ihren Garten überlassen. Du entscheidest dich ein paar KommilitonInnen zu einem Grillfest einzuladen. Du hast dich bereit erklärt für sämtliche Getränke und das Essen zu sorgen und dafür von jeder/ jedem 10 Euro kassiert. Insgesamt werdet ihr zu 10. sein, wobei du von 2 Leuten weißt, dass sie kein Fleisch essen.</p>
+                <h2>Produktauswahl</h2>
+                <div modal="shouldBeOpen" close="close()" options="opts">
+                    <div class="modal-header">
+                        <h4>{{modalHeader}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{modalContent}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+                    </div>
+                </div>
                 <dl>
                     <table class="table table-hover table-condensed">
                         <thead>
@@ -64,7 +72,7 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="products in scenario3Products">
-                                <td>{{products.product.art}}</td>
+                                <td><button class="btn btn-small" ng-click="open(products.product.art)">{{products.product.art}}</button></td>
                                 <td>{{products.product.name}}</td>
                                 <td>{{products.product.size}}</td>
                                 <td>{{products.product.price|currency:"&euro;"}}</td>
@@ -82,7 +90,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    
                 </dl>
             </div>
         </div>
