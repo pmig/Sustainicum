@@ -32,7 +32,6 @@ function SpielCtrl($scope,$http) {
   };
 
   $scope.close = function () {
-    $scope.closeMsg = 'I was closed at: ' + new Date();
     $scope.shouldBeOpen = false;
   };
 
@@ -95,8 +94,15 @@ function SpielCtrl($scope,$http) {
 
   function checkCart () {
     if ($scope.getBudget() < 0) {
-      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht!' });
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
     }
+
+    if ($scope.getCo2() < 0) {
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes CO2 Budget Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
+    }
+
     if ($scope.getHappiness() >= 100) {
       $scope.alerts.push({type:'success', msg: 'Gratulation, du hast die maximale Zufriedenheit errreicht!'});
     }
@@ -131,9 +137,8 @@ function Spiel2Ctrl($scope,$http) {
   $scope.modalContent = "";
   $scope.modalHeader = "";
 
-  
   $http.get('./data/scenario2.json').success(function(data) {
-    $scope.scenario1Products = data;
+    $scope.scenario2Products = data;
   });
 
   $http.get('./data/productDescription.json').success(function(data) {
@@ -142,19 +147,17 @@ function Spiel2Ctrl($scope,$http) {
 
   $scope.scenario2Meta = {
     "budget": 20.0,
-    "co2": 800.0,
+    "co2": 8000.0,
     "happiness": 100
   };
 
   $scope.open = function(art) {
-    console.log(art);
     $scope.modalHeader = art;
     $scope.modalContent = scenarioDescription[art];
     $scope.shouldBeOpen = true;
   };
 
   $scope.close = function () {
-    $scope.closeMsg = 'I was closed at: ' + new Date();
     $scope.shouldBeOpen = false;
   };
 
@@ -181,9 +184,9 @@ function Spiel2Ctrl($scope,$http) {
       tmpSum += cart[i][0].product.co2 * cart[i][1];
     }
     if (format=='pro') {
-      return tmpSum / $scope.scenario2Meta.co2 *100;
+      return ($scope.scenario2Meta.co2 - tmpSum) / $scope.scenario2Meta.co2 *100;
     } else {
-      return tmpSum;
+      return $scope.scenario2Meta.co2 - tmpSum;
     }
   };
 
@@ -217,8 +220,15 @@ function Spiel2Ctrl($scope,$http) {
 
   function checkCart () {
     if ($scope.getBudget() < 0) {
-      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht!' });
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
     }
+
+    if ($scope.getCo2() < 0) {
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes CO2 Budget Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
+    }
+
     if ($scope.getHappiness() >= 100) {
       $scope.alerts.push({type:'success', msg: 'Gratulation, du hast die maximale Zufriedenheit errreicht!'});
     }
@@ -268,14 +278,12 @@ function Spiel3Ctrl($scope,$http) {
   };
 
   $scope.open = function(art) {
-    console.log(art);
     $scope.modalHeader = art;
     $scope.modalContent = scenarioDescription[art];
     $scope.shouldBeOpen = true;
   };
 
   $scope.close = function () {
-    $scope.closeMsg = 'I was closed at: ' + new Date();
     $scope.shouldBeOpen = false;
   };
 
@@ -302,9 +310,9 @@ function Spiel3Ctrl($scope,$http) {
       tmpSum += cart[i][0].product.co2 * cart[i][1];
     }
     if (format=='pro') {
-      return tmpSum / $scope.scenario3Meta.co2 *100;
+      return ($scope.scenario3Meta.co2 - tmpSum) / $scope.scenario3Meta.co2 *100;
     } else {
-      return tmpSum;
+      return $scope.scenario3Meta.co2 - tmpSum;
     }
   };
 
@@ -338,8 +346,15 @@ function Spiel3Ctrl($scope,$http) {
 
   function checkCart () {
     if ($scope.getBudget() < 0) {
-      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht!' });
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes Geld Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
     }
+
+    if ($scope.getCo2() < 0) {
+      $scope.alerts.push({ type: 'error', msg: 'Achtung, du hast dein komplettes CO2 Budget Verbraucht, dein Einkaufswagen wurde geleert!' });
+      cart = [];
+    }
+
     if ($scope.getHappiness() >= 100) {
       $scope.alerts.push({type:'success', msg: 'Gratulation, du hast die maximale Zufriedenheit errreicht!'});
     }
