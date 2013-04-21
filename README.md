@@ -1,6 +1,5 @@
 # Sustainicum Webapp
 
-Description will follow shortly
-
-Working on it right now
-test
+* [Hompage](http://pmig.github.io/Sustainicum)
+* [Impressum](http://pmig.github.io/Sustainicum/#/impressum)
+* [Umsetzung: &copy; Philip Miglinci](http://pmig.at)
