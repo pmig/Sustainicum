@@ -26,7 +26,6 @@ function SpielCtrl($scope,$http) {
   };
 
   $scope.open = function(art) {
-    console.log(art);
     $scope.modalHeader = art;
     $scope.modalContent = scenarioDescription[art];
     $scope.shouldBeOpen = true;
@@ -60,9 +59,9 @@ function SpielCtrl($scope,$http) {
       tmpSum += cart[i][0].product.co2 * cart[i][1];
     }
     if (format=='pro') {
-      return tmpSum / $scope.scenario1Meta.co2 *100;
+      return ($scope.scenario1Meta.co2 - tmpSum) / $scope.scenario1Meta.co2 *100;
     } else {
-      return tmpSum;
+      return $scope.scenario1Meta.co2 - tmpSum;
     }
   };
 
